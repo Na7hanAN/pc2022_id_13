@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>GDP Statistics</title>
+  </head>
+  <body>
+    <div class="container" id="bsr-wrapper">
+      <ul class="nav justify-content-left ">
+        <li class="nav-item"><a class="nav-link" href="index.html">Back to Main Page</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://colab.research.google.com/drive/1Mse6Iq1fVG2D1A850kkQ6RsheuzxgNru?usp=sharing">Colab Document</a>
+		    <li class="nav-item"><a class="nav-link" href="https://docs.google.com/document/d/1IhyBF9tSLMBs8COl6HGEtgKVPMNpubkUh-upZGDKgaA/edit?usp=sharing">About the Project</a></li>
+
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Menu Item</a><a class="dropdown-item" href="#">Menu Item</a><a class="dropdown-item" href="#">Menu Item</a>
+            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Menu Item</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Menu Item</a><a class="dropdown-item" href="#">Menu Item</a><a class="dropdown-item" href="#">Menu Item</a>
+            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Menu Item</a>
+          </div>
+        </li>
+      </ul>
+
+      <h2>Crime Rate Index and Total Medals Count</h2>
+      <p>This scatter plot plots the relationship between Crime Rate Index of a country (x - axis) and the Total Medals Count  </p>
+      <picture>
+        <source srcset="https://unsplash.it/400/300" type="image/svg+xml"><img src="https://unsplash.it/400/300" class="mx-auto d-block" alt="Responsive image">
+      </picture>
+      <p>Insights:</p>
+      <ul>
+        <li> This graph failed to capture the hypothesized positive correlation between Crime Rate and Medal Count, with the R2 of 0.01. This means that the Olympic medal is unaffected by how much crime a country has. </li>
+      </ul>
+      <br><br>
+
+      <h2>Healthcare Ranking and Total Medals Count</h2>
+      <p>This graph explores the relationship between Healthcare ranking and Total Medal Count </p>
+      <picture>
+        <source srcset="https://unsplash.it/400/300" type="image/svg+xml"><img src="https://unsplash.it/400/300" class="mx-auto d-block" alt="Responsive image">
+      </picture>
+      <p>Insights:</p>
+      <ul>
+        <li>Similar to the first graph about crime rate, the healthcare ranking has a little correlation with the Olympic medal count. So we want to find out why. </li>
+      </ul>
+      <br><br>
+
+      <h2>Healthcare Ranking and GDP</h2>
+      <p>As we want to find out why Medals count is unaffected by healthcare ranking: we already know that there is a strong positive correlation between GDP and medal count, and we assumed that healthcare ranking is affected by GDP. Thus, to find out what went wrong, we need to testify to the relationship between Healthcare ranking(x-axis) and GDP (y-axis).</p>
+      <picture>
+        <source srcset="https://unsplash.it/400/300" type="image/svg+xml"><img src="https://unsplash.it/400/300" class="mx-auto d-block" alt="Responsive image">
+      </picture>
+      <p>Insights:</p>
+      <ul>
+        <li> as we can see in this graph, healthcare ranking does not correlate with GDP. Although the developed countries tend to have better healthcare, some some their GDP pales when compared to asian countries like Japan, India, China that have mediocre healthcare ranking. So we ask ourselves, what about GDP per capita and healthcare ranking?</li>
+      </ul>
+      <br><br>
+
+      <h2>Healthcare Ranking and GDP per capita (Bubble Size = Medal Count)</h2>
+      <p>This graph plots the relationship between healthcare ranking (x-axis) and GDP per capita (y-axis), and the bubble size is the total medals count of a country. </p>
+      <picture>
+        <source srcset="https://unsplash.it/400/300" type="image/svg+xml"><img src="https://unsplash.it/400/300" class="mx-auto d-block" alt="Responsive image">
+      </picture>
+      <p>Insights:</p>
+      <ul>
+        <li> Now it is clear that the healthcare ranking and GDP per capita is positively correlated, as the higher the ranking the better the GDP per capita. </li>
+      </ul>
+      <br><br>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
